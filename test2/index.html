@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my form</title>
+  </head>
+  <style>
+    .one {
+      border: 3px solid black;
+      text-align: center;
+      width: 500px;
+      background-color: cornsilk;
+    }
+    body {
+      background-color: rgb(211, 211, 237);
+    }
+    section {
+      border: 4px solid black;
+      background-color: crimson;
+    }
+  </style>
+  <body>
+    <!-- Design a form in which add normal input , radio input , check box . Add validation on emails . you can add more thing according to your creativity . When user submit the form all data should be printed in console in json formate  . * -->
+    <div class="ani">
+      <header align="center">
+        <h1>STUDENT REGISTRATION FORM</h1>
+        <h3>FILL THE FORM CAREFULLY</h3>
+      </header>
+      <section id="first">
+        <form align="center" id="form1">
+          <br />
+          <label for="name">FIRST NAME</label>
+          <input type="text" id="firstname" name="first name" />&nbsp;&nbsp;
+          <label for="name">LAST NAME</label>
+          <input type="text" id="lastname" name="last name" />
+          <br />
+          <br />
+          <label for="dob">D.O.B : </label>
+          <input type="date" id="dob" name="dob" />&nbsp;&nbsp;
+          <label for="gender">Gender : </label>
+          <input type="select" id="rijeka" name="gender" />
+          <br />
+          <br />
+          <label for="address">Address : </label>
+          <input type="text" id="address" name="address" />&nbsp;&nbsp;
+          <label for="mail">E-MAIL : </label>
+          <input type="email" id="mail" name="email" required />
+          <br />
+          <br />
+          <label for="city">City : </label>
+          <input type="text" name="city" />&nbsp;&nbsp;
+          <label for="state">State : </label>
+          <input type="state" name="state" required />
+          <br /><br />
+          <label>Are you graduated : </label>
+          <input type="radio" name="option" required /> yes
+          <input type="radio" name="option" required /> no
+          <br />
+          <br />
+
+          <input type="submit" />
+        </form>
+      </section>
+      <br /><br />
+      <hr />
+      <h2>Already a user then fill this <span>--</span></h2>
+      <div class="one">
+        <h2>SIGN UP</h2>
+        <form id="form2">
+          <br />
+          <label>Username</label> <br />
+          <input
+            type="text"
+            required
+            id="username"
+            placeholder="your user name"
+          />
+          <br />
+          <br />
+          <label>E-mail</label> <br />
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="example@gmail.com"
+          />
+          <br /><br />
+          <label>Pasword</label> <br />
+          <input
+            type="password"
+            required
+            id="password"
+            placeholder="enter your password"
+          />
+          <br /><br />
+          <label>Confirm-Pasword</label> <br />
+          <input type="password" required placeholder="confirm your password" />
+          <br /><br />
+          <input type="submit" />
+        </form>
+        <p>Already a member</p>
+        <button>LOGIN</button>
+      </div>
+    </div>
+    <script>
+      var form1 = document.getElementById("form1");
+      form1.addEventListener("submit", function (event) {
+        event.preventDefault(); //prevents form from auto submitting
+
+        var firstname = document.getElementById("firstname").value;
+        console.log(firstname);
+        var lastname = document.getElementById("lastname").value;
+        console.log(lastname);
+        var dob = document.getElementById("dob").value;
+        console.log(dob);
+        var gorav = document.getElementById("rijeka").value;
+        console.log(gorav);
+        var anku = document.getElementById("mail").value;
+        console.log(anku);
+      });
+
+      var form = document.getElementById("form2");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault(); //prevents form from auto submitting
+
+        var username = document.getElementById("username").value;
+        console.log(username);
+        var email = document.getElementById("email").value;
+        console.log(email);
+        var pass = document.getElementById("password").value;
+        console.log(pass);
+      });
+    </script>
+  </body>
+</html>
