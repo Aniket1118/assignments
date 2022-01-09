@@ -1,0 +1,30 @@
+.content {
+  width: 800px;
+  height: 815px;
+  border: 1px solid black;
+  margin-left: 400px;
+}
+h3 {
+  text-align: center;
+  display: inline-block;
+  height: 10px;
+  position: relative;
+  left: 370px;
+}
+.content span {
+  position: relative;
+  left: 400px;
+}
+.content h1 {
+  padding-left: 300px;
+}
+.info::first-letter {
+  font-size: 30px;
+}
+.info {
+  overflow-y: scroll;
+  margin-top: 90px;
+}
+h4 {
+  padding-left: 400px;
+}

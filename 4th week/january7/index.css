@@ -1,0 +1,29 @@
+body {
+  background: #007065;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+div {
+  height: 0;
+  width: 0;
+  position: relative;
+  border: 120px solid transparent;
+  border-bottom-color: #ffeecf;
+  top: -51px;
+}
+.a {
+  z-index: 3;
+}
+.b {
+  border-bottom-color: #f5c181;
+  z-index: 2;
+  top: -220px;
+}
+.c {
+  z-index: 1;
+  top: -400px;
+  border-bottom-color: #32a899;
+}
