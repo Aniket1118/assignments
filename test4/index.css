@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 40px;
+}
+.jambo {
+  text-align: center;
+  align-items: center;
+  background-color: darkgrey;
+  height: 180px;
+}
+.btn {
+  margin-top: 20px;
+}
+.btn {
+  border-radius: 10px;
+}
+table {
+  border-collapse: collapse;
+  margin-left: 450px;
+  margin-top: 50px;
+}
+td {
+  height: 130px;
+  width: 130px;
+  border: 2px solid black;
+  font-size: 90px;
+  text-align: center;
+}
+h3 {
+  font-size: 30px;
+}
+ul {
+  margin-left: 30px;
+}
+#h3_name {
+  text-align: right;
+  font-style: italic;
+  margin-right: 10px;
+}
+#btn1 {
+  background-color: #0aff23;
+  height: 30px;
+  width: 140px;
+}
+#btn2 {
+  background-color: #0af7ff;
+  height: 30px;
+  width: 140px;
+}
