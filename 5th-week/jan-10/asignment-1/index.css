@@ -1,0 +1,91 @@
+.Header {
+  background-color: tomato;
+}
+.para {
+  background-color: skyblue;
+}
+.three {
+  background-color: yellow;
+}
+.four {
+  background-color: pink;
+}
+.five {
+  background-color: rgb(66, 153, 66);
+}
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+@media only screen and (min-width: 600px) {
+  .Header {
+    order: 1;
+    width: 100%;
+  }
+  .para {
+    order: 2;
+  }
+  .three {
+    order: 3;
+    width: 50%;
+  }
+  .four {
+    order: 4;
+    width: 50%;
+  }
+  .five {
+    order: 5;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .Header {
+    order: 1;
+    width: 100%;
+  }
+  .three {
+    order: 2;
+    flex-grow: 1;
+    width: 25%;
+  }
+  .para {
+    order: 3;
+    flex-grow: 2;
+    width: 50%;
+  }
+  .four {
+    order: 4;
+    flex-grow: 1;
+    width: 25%;
+  }
+  .five {
+    order: 5;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Header {
+    order: 1;
+    width: 100%;
+  }
+  .three {
+    order: 2;
+    flex-grow: 1;
+    width: 100%;
+  }
+  .para {
+    order: 3;
+
+    width: 100%;
+  }
+  .four {
+    order: 4;
+    width: 100%;
+  }
+  .five {
+    order: 5;
+    width: 100%;
+  }
+}

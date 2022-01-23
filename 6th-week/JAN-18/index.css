@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+}
+nav {
+  height: 100px;
+  width: 100vw;
+
+  position: relative;
+}
+nav #logo {
+  position: absolute;
+  left: 200px;
+  top: 20px;
+}
+nav #searchbar {
+  position: absolute;
+  top: 20px;
+  left: 500px;
+}
+nav #searchbar input {
+  height: 40px;
+  width: 350px;
+  border-radius: 15px;
+}
+nav #icons {
+  position: absolute;
+  right: 100px;
+  top: 20px;
+  margin-right: 100px;
+}
+nav #icons ul {
+  list-style: none;
+}
+nav #icons ul li {
+  display: inline-block;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.secone {
+  position: absolute;
+  top: 100px;
+  left: 500px;
+  font-size: 25px;
+  padding: 5px;
+}
+.secone .one i {
+  padding-right: 10px;
+}
+.likes i {
+  padding: 10px;
+}
+#a i {
+  background-color: red;
+}
