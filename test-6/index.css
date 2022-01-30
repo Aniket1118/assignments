@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  background-color: black;
+  text-align: center;
+  color: royalblue;
+}
+input[type="text"] {
+  width: 400px;
+  border-radius: 35px;
+}
